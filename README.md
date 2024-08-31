@@ -31,6 +31,8 @@ Users should be able to:
 **Mobile:**
 
 <img width="317" alt="image" src="https://github.com/user-attachments/assets/14ce61d6-b4a2-4d45-8418-5d9cd35ab665">
+<img width="311" alt="image" src="https://github.com/user-attachments/assets/9230abe7-74c8-42e3-b0c2-e9c435eb6892">
+
 
 
 
