@@ -24,16 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
+**Desktop:**
+
 ![image](https://github.com/user-attachments/assets/be6bb502-a104-41df-b17a-e609875542a5)
 
+**Mobile:**
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+<img width="317" alt="image" src="https://github.com/user-attachments/assets/14ce61d6-b4a2-4d45-8418-5d9cd35ab665">
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -51,28 +50,41 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile-first workflow
 
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was my first project using flexbox and grid. Flexbox is used within each testimonial, and grid is used to structure the testimonials. I used @media to stack the testimonials if the viewport is less than 550px.
 
-To see how you can add code snippets, see below:
+Learning: everything that needs to be styled differently must be packaged into divs - and that turned out to be more than I had expected!
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+      <!--Jonathan-->
+      <div class="testimonial" id="jonathan">
+        <div class = "flex-wrapper">
+          <img src="./images/image-jonathan.jpg" alt="Image of Jonathan Walters" class="profile_pic"/>
+          <div class="profile">
+            <p class="name">Jonathan Walters</p>
+            <p class="status">Verified Graduate</p>
+          </div>  
+        </div>  
+        <p class="summary">The team was very supportive and kept me motivated</p>
+        <p class="quote">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+            for a big company. This was one of the best investments I’ve made in myself. ”</p>
+      </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+@media screen and (max-width:550px) {
+    #container {
+        position: relative;
+        top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+        gap: 2rem;
+        margin: 10px 10px
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
