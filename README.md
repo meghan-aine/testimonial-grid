@@ -26,7 +26,8 @@ Users should be able to:
 
 **Desktop:**
 
-![image](https://github.com/user-attachments/assets/be6bb502-a104-41df-b17a-e609875542a5)
+![image](https://github.com/user-attachments/assets/f6dd8706-473e-42b9-8e2e-9735d0beca2d)
+
 
 **Mobile:**
 
