@@ -87,21 +87,25 @@ body {
 /* Grid format */
 #container {
     display: grid;
-    max-width: 162rem;
+    width: 162rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "daniel daniel jonathan kira"
         "jeanette patrick patrick kira";
     gap: 2rem;
-    margin: 50px 50px;
-    padding: 16.4rem 16.5rem;
+    margin: 50px 50px
 }
 
+@media screen and (max-width:170rem) {
+    #container {
+        width: auto;
+}
+}
 
 @media screen and (max-width:550px) {
     #container {
         position: relative;
         top: 40px;
+        width: auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "daniel"
@@ -109,8 +113,7 @@ body {
         "jeanette"
         "patrick"
         "kira";
-        gap: 2rem;
-        margin: 10px 10px
+        margin: 10px 10px;
 }
 
 #attribution {
