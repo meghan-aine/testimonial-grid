@@ -1,0 +1,151 @@
+
+:root {
+    --violet: hsl(263, 55%, 52%);
+    --grayish_blue: hsl(217, 19%, 35%);
+    --blackish_blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light_gray: hsl(0, 0%, 81%);
+    --light_grayish_blue: hsl(210, 46%, 95%);
+
+    --ff: "Barlow Semi Condensed", sans-serif;
+
+    --fw-500: 500;
+    --fw-600: 600;
+
+    --fs-300: 0.650rem;
+    --fs-400: 0.850rem;
+    --fs-500: 1.250rem;
+}
+
+* {
+    font-family: var(--ff);
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: var(--fs-400);
+    background-color: var(--light_grayish_blue);  
+    color: var(--light_gray);
+}
+
+/* Generic style of all testimonials */
+.profile_pic {
+    border-radius: 50%;
+    height: 3rem;
+}
+
+.name {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-500);
+}
+
+.status {
+    font-size: var(--fs-300);
+    opacity: 0.5;
+}
+
+
+.summary {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-600);
+}
+
+.quote {
+    opacity: 0.7;
+    
+}
+
+/* Layout within each testimonial */
+.profile {
+    display: block;
+    position: relative;
+    left: 10px;
+    p {
+        padding: 0px;
+        margin: 5px;
+    }
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.testimonial {
+    display: block;
+    border-radius: 10px;
+    padding: 30px ;
+}
+
+/* Grid format */
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    gap: 2rem;
+    margin: 50px 50px
+}
+
+
+@media screen and (max-width:550px) {
+    #container {
+        position: relative;
+        top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+        gap: 2rem;
+        margin: 10px 10px
+}
+
+#attribution {
+    position: relative;
+    top: 40px;
+    margin: 10px
+}
+}
+
+/* design of invididual testimonials */
+
+#daniel {
+    grid-area: daniel;
+    background-image: url("./images/bg-pattern-quotation.svg") ;
+    background-repeat: no-repeat; 
+    background-position: top right 15%;
+    background-color: var(--violet);
+    color: var(--light_grayish_blue);
+}
+
+#jonathan {
+    grid-area: jonathan;
+    background-color: var(--grayish_blue);
+    color: var(--white);
+}
+
+#jeanette {
+    grid-area: jeanette;
+    background-color: var(--white);
+    color: var(--blackish_blue);
+}
+
+#patrick {
+    grid-area: patrick;
+    background-color: var(--blackish_blue);
+}
+
+#kira {
+    grid-area: kira;
+    background-color: var(--white);
+    color: var(--blackish_blue);
+}
