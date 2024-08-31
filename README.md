@@ -36,7 +36,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/meghan-aine/testimonial-grid](https://github.com/meghan-aine/testimonial-grid)
 - Live Site URL: [https://meghan-aine.github.io/testimonial-grid/](https://meghan-aine.github.io/testimonial-grid/)
 
 ## My process
