@@ -87,10 +87,12 @@ body {
 #container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "daniel daniel jonathan kira"
         "jeanette patrick patrick kira";
     gap: 2rem;
-    margin: 50px 50px
+    margin: 50px 50px;
+    padding: 16.4rem 16.5rem;
 }
 
 
