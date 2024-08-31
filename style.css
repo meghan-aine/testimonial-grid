@@ -92,7 +92,6 @@ body {
     grid-template-areas: "daniel daniel jonathan kira"
         "jeanette patrick patrick kira";
     gap: 2rem;
-    margin: 50px 50px
 }
 
 @media screen and (max-width:170rem) {
